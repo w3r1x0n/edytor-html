@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="edytor.css">
+    <script>
+        function js() {
+            document.getElementById("a").value = "<script> < /script>";
+            var text = document.getElementById("gen1")
+            return text.innerHTML += document.getElementById("a").value
+        }
+
+        function php() {
+            document.getElementById("b").value = "<?php  ?>";
+            return document.getElementById("gen1").innerHTML += document.getElementById("b").value
+        }
+
+        function pzb() {
+            document.getElementById("c").value = "<script> < /script>";
+            var text = document.getElementById("gen1")
+            return text.innerHTML += document.getElementById("c").value
+        }
+
+        function jpg() {
+            document.getElementById("d").value = "<?php  ?>";
+            return document.getElementById("gen1").innerHTML += document.getElementById("d").value
+        }
+    </script>
+    <title>Edytor html</title>
+</head>
+
+<body>
+    <header>
+        <h2>Edytor html</h2>
+    </header>
+
+    <form action="" name="form1">
+        <input type="submit" value="js w kodzie html" id="a" onClick="js()"><br>
+        <input type="submit" value="php" id="b" onClick="php()"><br>
+        <input type="submit" value="Połączenie z baza" id="c"><br>
+        <input type="submit" value="obrazek" id="d"><br>
+        <input type="submit" value="css"><br>
+        <input type="submit" value="hiperłącze"><br>
+        <input type="submit" value="tabela"><br>
+        <input type="submit" value="lista rozwijana"><br>
+        <input type="submit" value="lista uporządkowana"><br>
+        <input type="submit" value="lista nieuporzadkowana"><br>
+        <input type="submit" value="zewnetrzny js"><br>
+        <input type="submit" value="div"><br>
+        <input type="submit" value="textarea"><br>
+        <input type="submit" value="przykładowy formularz"><br>
+        <input type="submit" value="komentarz html"><br>
+        <input type="submit" value="komentarz php"><br>
+        <textarea name="gen" id="gen1" cols="90" rows="40" placeholder="wygenerowany kod"></textarea><br>
+    </form>
+    <div id="push"></div>
+    <footer>
+        <h2>Wykonała:</h2>
+    </footer>
+</body>
+
+</html>
